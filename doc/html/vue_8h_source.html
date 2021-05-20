@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Five or More:  Fichier source de source/vue.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Five or More
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">vue.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;gtk/gtk.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="controleur_8h.html">controleur.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modele_8h.html">modele.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_vue__t.html">Vue_t</a> <a class="code" href="struct_vue__t.html">Vue</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;GtkWidget*** creer_boutons(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_lignes, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_colonnes);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;GtkWidget* creer_fenetre();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;GtkWidget* creer_barre_infos(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;GtkWidget* creer_tableau(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;GtkWidget* changer_image(GtkWidget *p_bouton, <span class="keywordtype">char</span> p_etatBouton);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="struct_vue__t.html">Vue</a>* creer_vue(<span class="keywordtype">char</span> p_niveau);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> detruire_vue(<a class="code" href="struct_vue__t.html">Vue</a>* p_vue);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#a602491afb3e65f2e1b55c2854b40090a">maj_score</a>(<a class="code" href="struct_vue__t.html">Vue</a>* p_vue);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#a36f72ee7836cb52a90fbde62cea68e9e">detruire_fenetre</a>(GtkWidget *p_fenetre, gpointer p_data);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#a7300ab811956a8fe89132cea614473cc">maj_boutons_suivants</a>(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#aefe807c919846898e6836b3c95a6fa22">deplacement_vue</a>(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_ligne, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_colonne);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#af6ca28a8029ebd815a75e500e7cfd28c">retrace_defaults</a>(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#ad5adee54e7ced748ecc9903cb0339f4b">aide_popUp</a>(GtkWidget *p_widget, gpointer p_data);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#a20913fa8c71141926f9ac0edcd2083c9">score_popUp</a>(GtkWidget *p_widget, gpointer p_data);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#a2fe77fc126ac0a58f6da74179156a5a3">nom_popUp</a>(GtkWidget *p_widget, gpointer p_data);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;GtkWidget* get_vue_widget(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_ligne, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_colonne);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<a class="code" href="struct_vue__t.html">Vue</a>* set_vue_modele(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue, <a class="code" href="struct_modele__t.html">Modele</a> *p_modele);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#ad5fcd705ff72a14f115283c08226887e">set_vue_widget</a>(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue, GtkWidget *p_widget, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_ligne, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_colonne);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue_8c.html#a8c416b4f192bb098c235e6b8498c056a">set_vue_widget_suivant</a>(<a class="code" href="struct_vue__t.html">Vue</a> *p_vue, GtkWidget *p_widget, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> p_numero);</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="amodele_8h_html"><div class="ttname"><a href="modele_8h.html">modele.h</a></div><div class="ttdoc">Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du...</div></div>
+<div class="ttc" id="avue_8c_html_a8c416b4f192bb098c235e6b8498c056a"><div class="ttname"><a href="vue_8c.html#a8c416b4f192bb098c235e6b8498c056a">set_vue_widget_suivant</a></div><div class="ttdeci">void set_vue_widget_suivant(Vue *p_vue, GtkWidget *p_widget, unsigned int p_numero)</div><div class="ttdoc">setter sur la matrice du bouton suivant</div><div class="ttdef"><b>Definition:</b> vue.c:521</div></div>
+<div class="ttc" id="avue_8c_html_a7300ab811956a8fe89132cea614473cc"><div class="ttname"><a href="vue_8c.html#a7300ab811956a8fe89132cea614473cc">maj_boutons_suivants</a></div><div class="ttdeci">void maj_boutons_suivants(Vue *p_vue)</div><div class="ttdoc">Permet de mettre à jour les prochains boutons.</div><div class="ttdef"><b>Definition:</b> vue.c:326</div></div>
+<div class="ttc" id="astruct_vue__t_html"><div class="ttname"><a href="struct_vue__t.html">Vue_t</a></div><div class="ttdef"><b>Definition:</b> vue.c:70</div></div>
+<div class="ttc" id="avue_8c_html_a20913fa8c71141926f9ac0edcd2083c9"><div class="ttname"><a href="vue_8c.html#a20913fa8c71141926f9ac0edcd2083c9">score_popUp</a></div><div class="ttdeci">void score_popUp(GtkWidget *p_widget, gpointer p_data)</div><div class="ttdoc">Affiche la liste des meilleur score.</div><div class="ttdef"><b>Definition:</b> vue.c:414</div></div>
+<div class="ttc" id="avue_8c_html_ad5adee54e7ced748ecc9903cb0339f4b"><div class="ttname"><a href="vue_8c.html#ad5adee54e7ced748ecc9903cb0339f4b">aide_popUp</a></div><div class="ttdeci">void aide_popUp(GtkWidget *p_widget, gpointer p_data)</div><div class="ttdoc">Créé un pop-up d'aide.</div><div class="ttdef"><b>Definition:</b> vue.c:382</div></div>
+<div class="ttc" id="avue_8c_html_a36f72ee7836cb52a90fbde62cea68e9e"><div class="ttname"><a href="vue_8c.html#a36f72ee7836cb52a90fbde62cea68e9e">detruire_fenetre</a></div><div class="ttdeci">void detruire_fenetre(GtkWidget *p_fenetre, gpointer p_data)</div><div class="ttdoc">Permet de détruire la fenetre de jeux.</div><div class="ttdef"><b>Definition:</b> vue.c:320</div></div>
+<div class="ttc" id="avue_8c_html_aefe807c919846898e6836b3c95a6fa22"><div class="ttname"><a href="vue_8c.html#aefe807c919846898e6836b3c95a6fa22">deplacement_vue</a></div><div class="ttdeci">void deplacement_vue(Vue *p_vue, unsigned int p_ligne, unsigned int p_colonne)</div><div class="ttdef"><b>Definition:</b> vue.c:340</div></div>
+<div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div><div class="ttdoc">Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du...</div></div>
+<div class="ttc" id="astruct_modele__t_html"><div class="ttname"><a href="struct_modele__t.html">Modele_t</a></div><div class="ttdef"><b>Definition:</b> modele.c:63</div></div>
+<div class="ttc" id="avue_8c_html_af6ca28a8029ebd815a75e500e7cfd28c"><div class="ttname"><a href="vue_8c.html#af6ca28a8029ebd815a75e500e7cfd28c">retrace_defaults</a></div><div class="ttdeci">void retrace_defaults(Vue *p_vue)</div><div class="ttdoc">Vérifie l'état des boutons defaut.</div><div class="ttdef"><b>Definition:</b> vue.c:363</div></div>
+<div class="ttc" id="avue_8c_html_ad5fcd705ff72a14f115283c08226887e"><div class="ttname"><a href="vue_8c.html#ad5fcd705ff72a14f115283c08226887e">set_vue_widget</a></div><div class="ttdeci">void set_vue_widget(Vue *p_vue, GtkWidget *p_widget, unsigned int p_ligne, unsigned int p_colonne)</div><div class="ttdoc">setter sur la matrice des boutons</div><div class="ttdef"><b>Definition:</b> vue.c:512</div></div>
+<div class="ttc" id="avue_8c_html_a2fe77fc126ac0a58f6da74179156a5a3"><div class="ttname"><a href="vue_8c.html#a2fe77fc126ac0a58f6da74179156a5a3">nom_popUp</a></div><div class="ttdeci">void nom_popUp(GtkWidget *p_widget, gpointer p_data)</div><div class="ttdoc">Affiche la selection des nom pour le meilleur score.</div><div class="ttdef"><b>Definition:</b> vue.c:448</div></div>
+<div class="ttc" id="acontroleur_8h_html"><div class="ttname"><a href="controleur_8h.html">controleur.h</a></div><div class="ttdoc">Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du...</div></div>
+<div class="ttc" id="avue_8c_html_a602491afb3e65f2e1b55c2854b40090a"><div class="ttname"><a href="vue_8c.html#a602491afb3e65f2e1b55c2854b40090a">maj_score</a></div><div class="ttdeci">void maj_score(Vue *p_vue)</div><div class="ttdoc">permet de mettrre à jour le score</div><div class="ttdef"><b>Definition:</b> vue.c:312</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

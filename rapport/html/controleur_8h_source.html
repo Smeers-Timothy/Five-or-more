@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Five or More:  Fichier source de source/controleur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Five or More
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">controleur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="controleur_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef __CONTROLEUR__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define __CONTROLEUR__</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;gtk/gtk.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modele_8h.html">modele.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;vue.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="utils_8h.html">utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_controler__t.html">Controler_t</a> <a class="code" href="struct_controler__t.html">Controler</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_data__tab__t.html">Data_tab_t</a> <a class="code" href="struct_data__tab__t.html">Data_tab</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;GtkWidget* creer_menu(<a class="code" href="struct_controler__t.html">Controler</a> *p_controler, GtkWidget* p_window, <span class="keywordtype">char</span> p_level);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="struct_data__tab__t.html">Data_tab</a>* creer_data_tab(<a class="code" href="struct_controler__t.html">Controler</a> *p_controler);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="struct_data__tab__t.html">Data_tab</a>* set_data_controler(<a class="code" href="struct_data__tab__t.html">Data_tab</a> *p_data, <a class="code" href="struct_controler__t.html">Controler</a> *p_controler);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="struct_controler__t.html">Controler</a>* creer_controler();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="controleur_8h.html#a55ad2614bc85a3148584a4b36bcf7f36">detruire_controler</a>(<a class="code" href="struct_controler__t.html">Controler</a>* p_controler);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="struct_controler__t.html">Controler</a>* set_controler_modele(<a class="code" href="struct_controler__t.html">Controler</a> *p_controler, <a class="code" href="struct_modele__t.html">Modele</a> *p_modele);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<a class="code" href="struct_controler__t.html">Controler</a>* set_controler_vue(<a class="code" href="struct_controler__t.html">Controler</a> *p_controler, <a class="code" href="struct_vue__t.html">Vue</a> *p_vue);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">void</span>* nouveau_tour(<a class="code" href="struct_controler__t.html">Controler</a> *p_controler);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">void</span> <a class="code" href="controleur_8h.html#ad12d1406c9d8a6bad64e66c78dad2dce">creer_connections</a>(<a class="code" href="struct_controler__t.html">Controler</a> *p_controler, <a class="code" href="struct_data__tab__t.html">Data_tab</a> *p_data);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="acontroleur_8h_html_ad12d1406c9d8a6bad64e66c78dad2dce"><div class="ttname"><a href="controleur_8h.html#ad12d1406c9d8a6bad64e66c78dad2dce">creer_connections</a></div><div class="ttdeci">void creer_connections(Controler *p_controler, Data_tab *p_data)</div><div class="ttdoc">Créé une connection de type &quot;clicked&quot; pour chaque bouton présent dans le tableau de jeux.</div><div class="ttdef"><b>Definition:</b> controleur.c:362</div></div>
+<div class="ttc" id="amodele_8h_html"><div class="ttname"><a href="modele_8h.html">modele.h</a></div><div class="ttdoc">Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du...</div></div>
+<div class="ttc" id="astruct_vue__t_html"><div class="ttname"><a href="struct_vue__t.html">Vue_t</a></div><div class="ttdef"><b>Definition:</b> vue.c:70</div></div>
+<div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div><div class="ttdoc">Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du...</div></div>
+<div class="ttc" id="astruct_controler__t_html"><div class="ttname"><a href="struct_controler__t.html">Controler_t</a></div><div class="ttdef"><b>Definition:</b> controleur.c:39</div></div>
+<div class="ttc" id="astruct_modele__t_html"><div class="ttname"><a href="struct_modele__t.html">Modele_t</a></div><div class="ttdef"><b>Definition:</b> modele.c:63</div></div>
+<div class="ttc" id="acontroleur_8h_html_a55ad2614bc85a3148584a4b36bcf7f36"><div class="ttname"><a href="controleur_8h.html#a55ad2614bc85a3148584a4b36bcf7f36">detruire_controler</a></div><div class="ttdeci">void detruire_controler(Controler *p_controler)</div><div class="ttdoc">destruction de la structure de contrôle</div><div class="ttdef"><b>Definition:</b> controleur.c:287</div></div>
+<div class="ttc" id="astruct_data__tab__t_html"><div class="ttname"><a href="struct_data__tab__t.html">Data_tab_t</a></div><div class="ttdef"><b>Definition:</b> controleur.c:44</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Five or More: Référence du fichier source/vue.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Five or More
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier vue.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ce fichier contient les contenus de types et des fonctions pour la manipulation de la vue du jeu Five or More.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;vue.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_vue__t.html">Vue_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:abc7d886f82fef84302488654d2a5cc77"><td class="memItemLeft" align="right" valign="top"><a id="abc7d886f82fef84302488654d2a5cc77"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>X_AIDE_SIZE</b>&#160;&#160;&#160;400</td></tr>
+<tr class="separator:abc7d886f82fef84302488654d2a5cc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873a747c8971d1b5b62b2b955baca0dc"><td class="memItemLeft" align="right" valign="top"><a id="a873a747c8971d1b5b62b2b955baca0dc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>Y_AIDE_SIZE</b>&#160;&#160;&#160;150</td></tr>
+<tr class="separator:a873a747c8971d1b5b62b2b955baca0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f874d928b8e6f90563bb68a3614e1c"><td class="memItemLeft" align="right" valign="top"><a id="a81f874d928b8e6f90563bb68a3614e1c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCORE_SIZE</b>&#160;&#160;&#160;300</td></tr>
+<tr class="separator:a81f874d928b8e6f90563bb68a3614e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a6ea76e77fc932e204d9b2098fc43d"><td class="memItemLeft" align="right" valign="top"><a id="ae8a6ea76e77fc932e204d9b2098fc43d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>FACILE</b>&#160;&#160;&#160;'0'</td></tr>
+<tr class="separator:ae8a6ea76e77fc932e204d9b2098fc43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11fd52c74240c965b613c42c702da06"><td class="memItemLeft" align="right" valign="top"><a id="ad11fd52c74240c965b613c42c702da06"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIMENSIONS_FACILE</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:ad11fd52c74240c965b613c42c702da06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36ebd004cbcc6105ae81349b10ed393"><td class="memItemLeft" align="right" valign="top"><a id="af36ebd004cbcc6105ae81349b10ed393"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOUTONS_SUIVANT_FACILE</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:af36ebd004cbcc6105ae81349b10ed393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80be0c2c9121d9401d88bff3f4a78292"><td class="memItemLeft" align="right" valign="top"><a id="a80be0c2c9121d9401d88bff3f4a78292"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COULEURS_FACILE</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a80be0c2c9121d9401d88bff3f4a78292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e404cf60c6b192dacc09e00f56751b"><td class="memItemLeft" align="right" valign="top"><a id="a64e404cf60c6b192dacc09e00f56751b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MOYEN</b>&#160;&#160;&#160;'1'</td></tr>
+<tr class="separator:a64e404cf60c6b192dacc09e00f56751b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e2d46ffa56486f267fe0953144c7fc"><td class="memItemLeft" align="right" valign="top"><a id="a85e2d46ffa56486f267fe0953144c7fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIMENSIONS_MOYEN</b>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a85e2d46ffa56486f267fe0953144c7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af036cee3482fa6a75784ff4e7a504086"><td class="memItemLeft" align="right" valign="top"><a id="af036cee3482fa6a75784ff4e7a504086"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOUTONS_SUIVANT_MOYEN</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:af036cee3482fa6a75784ff4e7a504086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238fa075658186f5a5a65327c4a67ad8"><td class="memItemLeft" align="right" valign="top"><a id="a238fa075658186f5a5a65327c4a67ad8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COULEURS_MOYEN</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a238fa075658186f5a5a65327c4a67ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7c79f8aed3b4fa33a592c007807808"><td class="memItemLeft" align="right" valign="top"><a id="a0d7c79f8aed3b4fa33a592c007807808"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DIFFICILE</b>&#160;&#160;&#160;'2'</td></tr>
+<tr class="separator:a0d7c79f8aed3b4fa33a592c007807808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb9ee8ff7f7b7b9b2814ae7e1ff0cf7"><td class="memItemLeft" align="right" valign="top"><a id="a1fb9ee8ff7f7b7b9b2814ae7e1ff0cf7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LIGNES_DIFFICILE</b>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a1fb9ee8ff7f7b7b9b2814ae7e1ff0cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58bc8930d2e4fc6a959734b98238c61"><td class="memItemLeft" align="right" valign="top"><a id="af58bc8930d2e4fc6a959734b98238c61"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COLONNE_DIFFICILE</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:af58bc8930d2e4fc6a959734b98238c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17b298a80e1f997c2af9ae3ad7982d8"><td class="memItemLeft" align="right" valign="top"><a id="ab17b298a80e1f997c2af9ae3ad7982d8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOUTONS_SUIVANT_DIFFICILE</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:ab17b298a80e1f997c2af9ae3ad7982d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539a00a6fd8df575c6e699fd2fbd799a"><td class="memItemLeft" align="right" valign="top"><a id="a539a00a6fd8df575c6e699fd2fbd799a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COULEURS_DIFFICILE</b>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a539a00a6fd8df575c6e699fd2fbd799a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbea62f1ce2043dd08108e65ed8de1d"><td class="memItemLeft" align="right" valign="top"><a id="a0cbea62f1ce2043dd08108e65ed8de1d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCALE</b>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a0cbea62f1ce2043dd08108e65ed8de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2dc237e07e2b4c8a52a5203c216fd37"><td class="memItemLeft" align="right" valign="top"><a id="ab2dc237e07e2b4c8a52a5203c216fd37"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPACING</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ab2dc237e07e2b4c8a52a5203c216fd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eebd09a9a94c914de17855816e6ac45"><td class="memItemLeft" align="right" valign="top"><a id="a3eebd09a9a94c914de17855816e6ac45"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PADDING</b>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a3eebd09a9a94c914de17855816e6ac45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a181bf1b9b05ac1cd87a0b054a15937"><td class="memItemLeft" align="right" valign="top"><a id="a9a181bf1b9b05ac1cd87a0b054a15937"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_IMG</b>&#160;&#160;&#160;&quot;source/Images/default.png&quot;</td></tr>
+<tr class="separator:a9a181bf1b9b05ac1cd87a0b054a15937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d10e672abb49ad63eeaa8aaef57c38"><td class="memItemLeft" align="right" valign="top"><a id="a79d10e672abb49ad63eeaa8aaef57c38"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BLUE</b>&#160;&#160;&#160;&quot;source/Images/blue.png&quot;</td></tr>
+<tr class="separator:a79d10e672abb49ad63eeaa8aaef57c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad243f93c16bc4c1d3e0a13b84421d760"><td class="memItemLeft" align="right" valign="top"><a id="ad243f93c16bc4c1d3e0a13b84421d760"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CYAN</b>&#160;&#160;&#160;&quot;source/Images/cyan.png&quot;</td></tr>
+<tr class="separator:ad243f93c16bc4c1d3e0a13b84421d760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbc006ea433ad708fdee3e82996e721"><td class="memItemLeft" align="right" valign="top"><a id="acfbc006ea433ad708fdee3e82996e721"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GREEN</b>&#160;&#160;&#160;&quot;source/Images/green.png&quot;</td></tr>
+<tr class="separator:acfbc006ea433ad708fdee3e82996e721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b6e19bf06822021f35602c59658de3"><td class="memItemLeft" align="right" valign="top"><a id="ac5b6e19bf06822021f35602c59658de3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ORANGE</b>&#160;&#160;&#160;&quot;source/Images/orange.png&quot;</td></tr>
+<tr class="separator:ac5b6e19bf06822021f35602c59658de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb0b009e7a7390473ace4d98bd843c0"><td class="memItemLeft" align="right" valign="top"><a id="a0bb0b009e7a7390473ace4d98bd843c0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PURPLE</b>&#160;&#160;&#160;&quot;source/Images/purple.png&quot;</td></tr>
+<tr class="separator:a0bb0b009e7a7390473ace4d98bd843c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d23feea868a983c8c2b661e1e16972f"><td class="memItemLeft" align="right" valign="top"><a id="a8d23feea868a983c8c2b661e1e16972f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RED</b>&#160;&#160;&#160;&quot;source/Images/red.png&quot;</td></tr>
+<tr class="separator:a8d23feea868a983c8c2b661e1e16972f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf681265909adf3d3e8116c93c0ba179"><td class="memItemLeft" align="right" valign="top"><a id="abf681265909adf3d3e8116c93c0ba179"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>YELLOW</b>&#160;&#160;&#160;&quot;source/Images/yellow.png&quot;</td></tr>
+<tr class="separator:abf681265909adf3d3e8116c93c0ba179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba51915c87d64af47fb1cc59348961c9"><td class="memItemLeft" align="right" valign="top"><a id="aba51915c87d64af47fb1cc59348961c9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OK</b>&#160;&#160;&#160;&quot;source/Images/ok.png&quot;</td></tr>
+<tr class="separator:aba51915c87d64af47fb1cc59348961c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec23e003f2b1f5ae2bcbf30a60bf81dc"><td class="memItemLeft" align="right" valign="top"><a id="aec23e003f2b1f5ae2bcbf30a60bf81dc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>A_PROPOS</b>&#160;&#160;&#160;&quot;A propos&quot;</td></tr>
+<tr class="separator:aec23e003f2b1f5ae2bcbf30a60bf81dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ee2c6f99b228fe1f01b62f13a2b861"><td class="memItemLeft" align="right" valign="top"><a id="ac3ee2c6f99b228fe1f01b62f13a2b861"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEXTE</b>&#160;&#160;&#160;&quot;Five or More. \nSmeers Timothy (ULiege). \nNoirfalise Martin (ULiege). \nCours INFO0030 -- 04/05/2021&quot;</td></tr>
+<tr class="separator:ac3ee2c6f99b228fe1f01b62f13a2b861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8401d4788384743db1f10775b177b4fe"><td class="memItemLeft" align="right" valign="top"><a id="a8401d4788384743db1f10775b177b4fe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>VBOX_SPACING</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a8401d4788384743db1f10775b177b4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6709e8592bf8fc9c0e7970217c31bcca"><td class="memItemLeft" align="right" valign="top"><a id="a6709e8592bf8fc9c0e7970217c31bcca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SUIVANT</b>&#160;&#160;&#160;&quot;Suivants :&quot;</td></tr>
+<tr class="separator:a6709e8592bf8fc9c0e7970217c31bcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00658ed53f1bd7b1ecc33f45de053171"><td class="memItemLeft" align="right" valign="top"><a id="a00658ed53f1bd7b1ecc33f45de053171"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCORE</b>&#160;&#160;&#160;&quot;Score :&quot;</td></tr>
+<tr class="separator:a00658ed53f1bd7b1ecc33f45de053171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4167ec5f8af0c55394b621baa3796acc"><td class="memItemLeft" align="right" valign="top"><a id="a4167ec5f8af0c55394b621baa3796acc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BEST_SCORE</b>&#160;&#160;&#160;&quot;Meilleurs score :&quot;</td></tr>
+<tr class="separator:a4167ec5f8af0c55394b621baa3796acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5853d67d3723b9cef26d9444e7fbf31b"><td class="memItemLeft" align="right" valign="top"><a id="a5853d67d3723b9cef26d9444e7fbf31b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SELLECTION</b>&#160;&#160;&#160;&quot;Ok&quot;</td></tr>
+<tr class="separator:a5853d67d3723b9cef26d9444e7fbf31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0e6b80dd3d5ca395cf58151749f5e2"><td class="memItemLeft" align="right" valign="top"><a id="a6a0e6b80dd3d5ca395cf58151749f5e2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RETURN</b>&#160;&#160;&#160;&quot;Retour&quot;</td></tr>
+<tr class="separator:a6a0e6b80dd3d5ca395cf58151749f5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033ed81c13aab2c1982954148a60e959"><td class="memItemLeft" align="right" valign="top"><a id="a033ed81c13aab2c1982954148a60e959"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>NOM</b>&#160;&#160;&#160;&quot;Entrez votre nom !&quot;</td></tr>
+<tr class="separator:a033ed81c13aab2c1982954148a60e959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da44afeba217135a680a7477b5e3ce3"><td class="memItemLeft" align="right" valign="top"><a id="a3da44afeba217135a680a7477b5e3ce3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT</b>&#160;&#160;&#160;'d'</td></tr>
+<tr class="separator:a3da44afeba217135a680a7477b5e3ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ce49050eebf54133039884ec040488"><td class="memItemLeft" align="right" valign="top"><a id="a38ce49050eebf54133039884ec040488"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>POPUP</b>&#160;&#160;&#160;'a'</td></tr>
+<tr class="separator:a38ce49050eebf54133039884ec040488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a6c4bb1d8fbbea75af29c5fd8a8d6d09b"><td class="memItemLeft" align="right" valign="top"><a id="a6c4bb1d8fbbea75af29c5fd8a8d6d09b"></a>
+GtkWidget ***&#160;</td><td class="memItemRight" valign="bottom"><b>creer_boutons</b> (unsigned int p_lignes, unsigned int p_colonnes)</td></tr>
+<tr class="separator:a6c4bb1d8fbbea75af29c5fd8a8d6d09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae3724f4e349fe34c7f1978ba8b4ec7"><td class="memItemLeft" align="right" valign="top"><a id="a1ae3724f4e349fe34c7f1978ba8b4ec7"></a>
+GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>creer_fenetre</b> ()</td></tr>
+<tr class="separator:a1ae3724f4e349fe34c7f1978ba8b4ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc16ec17c1e9f67a50c24b39126f4f9"><td class="memItemLeft" align="right" valign="top"><a id="a2cc16ec17c1e9f67a50c24b39126f4f9"></a>
+GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>creer_barre_infos</b> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue)</td></tr>
+<tr class="separator:a2cc16ec17c1e9f67a50c24b39126f4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40427e458a9e5d2ed3f030ee379f001f"><td class="memItemLeft" align="right" valign="top"><a id="a40427e458a9e5d2ed3f030ee379f001f"></a>
+GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>creer_tableau</b> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue)</td></tr>
+<tr class="separator:a40427e458a9e5d2ed3f030ee379f001f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ac02b681ad88118dcd135e75bf52ce"><td class="memItemLeft" align="right" valign="top"><a id="a90ac02b681ad88118dcd135e75bf52ce"></a>
+GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>changer_image</b> (GtkWidget *p_bouton, char p_etatBouton)</td></tr>
+<tr class="separator:a90ac02b681ad88118dcd135e75bf52ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e38dab02d0be97a8a494a2af87622f"><td class="memItemLeft" align="right" valign="top"><a id="ac1e38dab02d0be97a8a494a2af87622f"></a>
+<a class="el" href="struct_vue__t.html">Vue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>creer_vue</b> (char p_niveau)</td></tr>
+<tr class="separator:ac1e38dab02d0be97a8a494a2af87622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e41850eeead7dd5a65edfc43523a0c9"><td class="memItemLeft" align="right" valign="top"><a id="a8e41850eeead7dd5a65edfc43523a0c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>detruire_vue</b> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue)</td></tr>
+<tr class="separator:a8e41850eeead7dd5a65edfc43523a0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602491afb3e65f2e1b55c2854b40090a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#a602491afb3e65f2e1b55c2854b40090a">maj_score</a> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue)</td></tr>
+<tr class="memdesc:a602491afb3e65f2e1b55c2854b40090a"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de mettrre à jour le score  <a href="vue_8c.html#a602491afb3e65f2e1b55c2854b40090a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a602491afb3e65f2e1b55c2854b40090a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f72ee7836cb52a90fbde62cea68e9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#a36f72ee7836cb52a90fbde62cea68e9e">detruire_fenetre</a> (GtkWidget *p_fenetre, gpointer p_data)</td></tr>
+<tr class="memdesc:a36f72ee7836cb52a90fbde62cea68e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de détruire la fenetre de jeux.  <a href="vue_8c.html#a36f72ee7836cb52a90fbde62cea68e9e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a36f72ee7836cb52a90fbde62cea68e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7300ab811956a8fe89132cea614473cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#a7300ab811956a8fe89132cea614473cc">maj_boutons_suivants</a> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue)</td></tr>
+<tr class="memdesc:a7300ab811956a8fe89132cea614473cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de mettre à jour les prochains boutons.  <a href="vue_8c.html#a7300ab811956a8fe89132cea614473cc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7300ab811956a8fe89132cea614473cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe807c919846898e6836b3c95a6fa22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#aefe807c919846898e6836b3c95a6fa22">deplacement_vue</a> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue, unsigned int p_ligne, unsigned int p_colonne)</td></tr>
+<tr class="separator:aefe807c919846898e6836b3c95a6fa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ca28a8029ebd815a75e500e7cfd28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#af6ca28a8029ebd815a75e500e7cfd28c">retrace_defaults</a> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue)</td></tr>
+<tr class="memdesc:af6ca28a8029ebd815a75e500e7cfd28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie l'état des boutons defaut.  <a href="vue_8c.html#af6ca28a8029ebd815a75e500e7cfd28c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af6ca28a8029ebd815a75e500e7cfd28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5adee54e7ced748ecc9903cb0339f4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#ad5adee54e7ced748ecc9903cb0339f4b">aide_popUp</a> (GtkWidget *p_widget, gpointer p_data)</td></tr>
+<tr class="memdesc:ad5adee54e7ced748ecc9903cb0339f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé un pop-up d'aide.  <a href="vue_8c.html#ad5adee54e7ced748ecc9903cb0339f4b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad5adee54e7ced748ecc9903cb0339f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20913fa8c71141926f9ac0edcd2083c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#a20913fa8c71141926f9ac0edcd2083c9">score_popUp</a> (GtkWidget *p_widget, gpointer p_data)</td></tr>
+<tr class="memdesc:a20913fa8c71141926f9ac0edcd2083c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la liste des meilleur score.  <a href="vue_8c.html#a20913fa8c71141926f9ac0edcd2083c9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a20913fa8c71141926f9ac0edcd2083c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe77fc126ac0a58f6da74179156a5a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#a2fe77fc126ac0a58f6da74179156a5a3">nom_popUp</a> (GtkWidget *p_widget, gpointer p_data)</td></tr>
+<tr class="memdesc:a2fe77fc126ac0a58f6da74179156a5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la selection des nom pour le meilleur score.  <a href="vue_8c.html#a2fe77fc126ac0a58f6da74179156a5a3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2fe77fc126ac0a58f6da74179156a5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b938a032bb03b30755de194e77143b"><td class="memItemLeft" align="right" valign="top"><a id="a22b938a032bb03b30755de194e77143b"></a>
+GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>get_vue_widget</b> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue, unsigned int p_ligne, unsigned int p_colonne)</td></tr>
+<tr class="separator:a22b938a032bb03b30755de194e77143b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a763e9c830d509b2462c6a20c5d2e5"><td class="memItemLeft" align="right" valign="top"><a id="ab7a763e9c830d509b2462c6a20c5d2e5"></a>
+<a class="el" href="struct_vue__t.html">Vue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>set_vue_modele</b> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue, <a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="separator:ab7a763e9c830d509b2462c6a20c5d2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5fcd705ff72a14f115283c08226887e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#ad5fcd705ff72a14f115283c08226887e">set_vue_widget</a> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue, GtkWidget *p_widget, unsigned int p_ligne, unsigned int p_colonne)</td></tr>
+<tr class="memdesc:ad5fcd705ff72a14f115283c08226887e"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter sur la matrice des boutons  <a href="vue_8c.html#ad5fcd705ff72a14f115283c08226887e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad5fcd705ff72a14f115283c08226887e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c416b4f192bb098c235e6b8498c056a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vue_8c.html#a8c416b4f192bb098c235e6b8498c056a">set_vue_widget_suivant</a> (<a class="el" href="struct_vue__t.html">Vue</a> *p_vue, GtkWidget *p_widget, unsigned int p_numero)</td></tr>
+<tr class="memdesc:a8c416b4f192bb098c235e6b8498c056a"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter sur la matrice du bouton suivant  <a href="vue_8c.html#a8c416b4f192bb098c235e6b8498c056a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8c416b4f192bb098c235e6b8498c056a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ce fichier contient les contenus de types et des fonctions pour la manipulation de la vue du jeu Five or More. </p>
+<dl class="section author"><dt>Auteurs</dt><dd>Noirfalise Martin S200912, Smeers Timothy S200930 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>05/04/2021</dd></dl>
+<p>Manipule la vue en tant que structure opaque.</p>
+<p>Critère de style : s_ Les variable globale à plusieurs fichiers p_ Les paramètre de fonctions l_ Les variables globale à une seule fonction </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ad5adee54e7ced748ecc9903cb0339f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5adee54e7ced748ecc9903cb0339f4b">&#9670;&nbsp;</a></span>aide_popUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void aide_popUp </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>p_widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Créé un pop-up d'aide. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_widget != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Un pop-up est créé </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_widget</td><td></td></tr>
+    <tr><td class="paramname">p_data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aefe807c919846898e6836b3c95a6fa22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe807c919846898e6836b3c95a6fa22">&#9670;&nbsp;</a></span>deplacement_vue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deplacement_vue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vue__t.html">Vue</a> *&#160;</td>
+          <td class="paramname"><em>p_vue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Précondition</dt><dd>p_vue != NULL &amp;&amp; p_ligne &gt;= 0 &amp;&amp; p_colonne &gt;= 0 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_vue</td><td>Un pointeur sur la structure de vue </td></tr>
+    <tr><td class="paramname">p_ligne</td><td>La ligne ou faire le déplacement </td></tr>
+    <tr><td class="paramname">p_colonne</td><td>La colonne ou faire le déplacement </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a36f72ee7836cb52a90fbde62cea68e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f72ee7836cb52a90fbde62cea68e9e">&#9670;&nbsp;</a></span>detruire_fenetre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void detruire_fenetre </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>p_fenetre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de détruire la fenetre de jeux. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_fenetre != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>La fenetre est détruite </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_fenetre</td><td>la fenetre à détruire </td></tr>
+    <tr><td class="paramname">p_data</td><td>NULL </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7300ab811956a8fe89132cea614473cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7300ab811956a8fe89132cea614473cc">&#9670;&nbsp;</a></span>maj_boutons_suivants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void maj_boutons_suivants </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vue__t.html">Vue</a> *&#160;</td>
+          <td class="paramname"><em>p_vue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de mettre à jour les prochains boutons. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_vue != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>les prochain bouton in été mis a jour </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_vue</td><td>Un pointeur sur la structure de vue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a602491afb3e65f2e1b55c2854b40090a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602491afb3e65f2e1b55c2854b40090a">&#9670;&nbsp;</a></span>maj_score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void maj_score </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vue__t.html">Vue</a> *&#160;</td>
+          <td class="paramname"><em>p_vue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>permet de mettrre à jour le score </p>
+<dl class="section pre"><dt>Précondition</dt><dd>assert(p_vue != NULL); </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_vue</td><td>La structure de la vue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2fe77fc126ac0a58f6da74179156a5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe77fc126ac0a58f6da74179156a5a3">&#9670;&nbsp;</a></span>nom_popUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nom_popUp </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>p_widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche la selection des nom pour le meilleur score. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_widget != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Un pop-up est créé </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_widget</td><td>la widget </td></tr>
+    <tr><td class="paramname">p_data</td><td>la data (peut être null) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af6ca28a8029ebd815a75e500e7cfd28c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ca28a8029ebd815a75e500e7cfd28c">&#9670;&nbsp;</a></span>retrace_defaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void retrace_defaults </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vue__t.html">Vue</a> *&#160;</td>
+          <td class="paramname"><em>p_vue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie l'état des boutons defaut. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_vue != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_vue</td><td>Un pointeur sur la structure de vue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20913fa8c71141926f9ac0edcd2083c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20913fa8c71141926f9ac0edcd2083c9">&#9670;&nbsp;</a></span>score_popUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score_popUp </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>p_widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche la liste des meilleur score. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_widget != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>Un pop-up est créé </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_widget</td><td>la widget </td></tr>
+    <tr><td class="paramname">p_data</td><td>la data (peut être null) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad5fcd705ff72a14f115283c08226887e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5fcd705ff72a14f115283c08226887e">&#9670;&nbsp;</a></span>set_vue_widget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_vue_widget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vue__t.html">Vue</a> *&#160;</td>
+          <td class="paramname"><em>p_vue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>p_widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter sur la matrice des boutons </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_vue != NULL &amp;&amp; p_widget != NULL &amp;&amp; p_ligne &gt;= 0 &amp;&amp; p_colonne &gt;= 0 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>le bouton prend sa nouvelle valeur </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_vue</td><td>Un pointeur sur la structure de vue </td></tr>
+    <tr><td class="paramname">p_widget</td><td>Un pointeur sur un widget </td></tr>
+    <tr><td class="paramname">p_ligne</td><td>La ligne du bouton </td></tr>
+    <tr><td class="paramname">p_colonne</td><td>La colonne du bouton </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8c416b4f192bb098c235e6b8498c056a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c416b4f192bb098c235e6b8498c056a">&#9670;&nbsp;</a></span>set_vue_widget_suivant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_vue_widget_suivant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vue__t.html">Vue</a> *&#160;</td>
+          <td class="paramname"><em>p_vue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>p_widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_numero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter sur la matrice du bouton suivant </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_vue != NULL &amp;&amp; p_widget != NULL &amp;&amp; p_numero &gt;= 0 </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_vue</td><td>Un pointeur sur la structure de vue </td></tr>
+    <tr><td class="paramname">p_widget</td><td>Un pointeur sur un widget </td></tr>
+    <tr><td class="paramname">p_numero</td><td>Le numéro du bouton suivant </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

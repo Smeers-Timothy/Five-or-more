@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Five or More: Référence du fichier source/controleur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Five or More
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier controleur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du controleur du jeu Five or More.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;gtk/gtk.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="modele_8h_source.html">modele.h</a>&quot;</code><br />
+<code>#include &quot;vue.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+</div>
+<p><a href="controleur_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a95fc349ddbad04a88ac2be4005532c1e"><td class="memItemLeft" align="right" valign="top"><a id="a95fc349ddbad04a88ac2be4005532c1e"></a>
+<a class="el" href="structtypedef.html">typedef</a> struct <a class="el" href="struct_controler__t.html">Controler_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Controler</b></td></tr>
+<tr class="separator:a95fc349ddbad04a88ac2be4005532c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fcd5d8db3d6231eb95492263546ca49"><td class="memItemLeft" align="right" valign="top"><a id="a8fcd5d8db3d6231eb95492263546ca49"></a>
+<a class="el" href="structtypedef.html">typedef</a> struct <a class="el" href="struct_data__tab__t.html">Data_tab_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Data_tab</b></td></tr>
+<tr class="separator:a8fcd5d8db3d6231eb95492263546ca49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a1b5c2c70abb6d9f01dafb8e4caac1973"><td class="memItemLeft" align="right" valign="top"><a id="a1b5c2c70abb6d9f01dafb8e4caac1973"></a>
+GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>creer_menu</b> (<a class="el" href="struct_controler__t.html">Controler</a> *p_controler, GtkWidget *p_window, char p_level)</td></tr>
+<tr class="separator:a1b5c2c70abb6d9f01dafb8e4caac1973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fded22559069674a1ad1e905960940"><td class="memItemLeft" align="right" valign="top"><a id="a73fded22559069674a1ad1e905960940"></a>
+<a class="el" href="struct_data__tab__t.html">Data_tab</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>creer_data_tab</b> (<a class="el" href="struct_controler__t.html">Controler</a> *p_controler)</td></tr>
+<tr class="separator:a73fded22559069674a1ad1e905960940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2a22b63c2943c2d2b2eae2b2e54c11"><td class="memItemLeft" align="right" valign="top"><a id="aeb2a22b63c2943c2d2b2eae2b2e54c11"></a>
+<a class="el" href="struct_data__tab__t.html">Data_tab</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>set_data_controler</b> (<a class="el" href="struct_data__tab__t.html">Data_tab</a> *p_data, <a class="el" href="struct_controler__t.html">Controler</a> *p_controler)</td></tr>
+<tr class="separator:aeb2a22b63c2943c2d2b2eae2b2e54c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291615d9b0a017791bd10f9e2f3ae985"><td class="memItemLeft" align="right" valign="top"><a id="a291615d9b0a017791bd10f9e2f3ae985"></a>
+<a class="el" href="struct_controler__t.html">Controler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>creer_controler</b> ()</td></tr>
+<tr class="separator:a291615d9b0a017791bd10f9e2f3ae985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ad2614bc85a3148584a4b36bcf7f36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="controleur_8h.html#a55ad2614bc85a3148584a4b36bcf7f36">detruire_controler</a> (<a class="el" href="struct_controler__t.html">Controler</a> *p_controler)</td></tr>
+<tr class="memdesc:a55ad2614bc85a3148584a4b36bcf7f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">destruction de la structure de contrôle  <a href="controleur_8h.html#a55ad2614bc85a3148584a4b36bcf7f36">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a55ad2614bc85a3148584a4b36bcf7f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8032fa2097f32eff120c341347d7ab1f"><td class="memItemLeft" align="right" valign="top"><a id="a8032fa2097f32eff120c341347d7ab1f"></a>
+<a class="el" href="struct_controler__t.html">Controler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>set_controler_modele</b> (<a class="el" href="struct_controler__t.html">Controler</a> *p_controler, <a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="separator:a8032fa2097f32eff120c341347d7ab1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0ba330bc03276b8d0c721b972efc2b"><td class="memItemLeft" align="right" valign="top"><a id="aef0ba330bc03276b8d0c721b972efc2b"></a>
+<a class="el" href="struct_controler__t.html">Controler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>set_controler_vue</b> (<a class="el" href="struct_controler__t.html">Controler</a> *p_controler, <a class="el" href="struct_vue__t.html">Vue</a> *p_vue)</td></tr>
+<tr class="separator:aef0ba330bc03276b8d0c721b972efc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64fecfbe7d3a76a8c5cf9d874c88fa0"><td class="memItemLeft" align="right" valign="top"><a id="ad64fecfbe7d3a76a8c5cf9d874c88fa0"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>nouveau_tour</b> (<a class="el" href="struct_controler__t.html">Controler</a> *p_controler)</td></tr>
+<tr class="separator:ad64fecfbe7d3a76a8c5cf9d874c88fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12d1406c9d8a6bad64e66c78dad2dce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="controleur_8h.html#ad12d1406c9d8a6bad64e66c78dad2dce">creer_connections</a> (<a class="el" href="struct_controler__t.html">Controler</a> *p_controler, <a class="el" href="struct_data__tab__t.html">Data_tab</a> *p_data)</td></tr>
+<tr class="memdesc:ad12d1406c9d8a6bad64e66c78dad2dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé une connection de type "clicked" pour chaque bouton présent dans le tableau de jeux.  <a href="controleur_8h.html#ad12d1406c9d8a6bad64e66c78dad2dce">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad12d1406c9d8a6bad64e66c78dad2dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du controleur du jeu Five or More. </p>
+<dl class="section author"><dt>Auteurs</dt><dd>Noirfalise Martin S200912, Smeers Timothy S200930 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>05/04/2021</dd></dl>
+<p>Manipule les controleurs en tant que structure opaque.</p>
+<p>Critère de style : s_ Les variable globale à plusieurs fichiers p_ Les paramètre de fonctions l_ Les variables globale à une seule fonction </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ad12d1406c9d8a6bad64e66c78dad2dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12d1406c9d8a6bad64e66c78dad2dce">&#9670;&nbsp;</a></span>creer_connections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void creer_connections </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_controler__t.html">Controler</a> *&#160;</td>
+          <td class="paramname"><em>p_controler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_data__tab__t.html">Data_tab</a> *&#160;</td>
+          <td class="paramname"><em>p_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Créé une connection de type "clicked" pour chaque bouton présent dans le tableau de jeux. </p>
+<dl class="section warning"><dt>Avertissement</dt><dd>cast to pointer from integer of different size</dd></dl>
+<dl class="section pre"><dt>Précondition</dt><dd>p_controler != NULL &amp;&amp; p_data != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_controler</td><td>Un pointeur sur la structure de contrôle </td></tr>
+    <tr><td class="paramname">p_data</td><td>Un pointeur sur la structure de données </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a55ad2614bc85a3148584a4b36bcf7f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ad2614bc85a3148584a4b36bcf7f36">&#9670;&nbsp;</a></span>detruire_controler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void detruire_controler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_controler__t.html">Controler</a> *&#160;</td>
+          <td class="paramname"><em>p_controler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>destruction de la structure de contrôle </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_controler != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>controleur détruit </dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>/ </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

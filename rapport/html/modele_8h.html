@@ -1,0 +1,913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Five or More: Référence du fichier source/modele.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Five or More
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier modele.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du modèle(boutons) du jeu Five or More.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;gtk/gtk.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+</div>
+<p><a href="modele_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:afd7f147ad3a557c4fd28228129a05963"><td class="memItemLeft" align="right" valign="top"><a id="afd7f147ad3a557c4fd28228129a05963"></a>
+<a class="el" href="structtypedef.html">typedef</a> struct <a class="el" href="struct_modele__t.html">Modele_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Modele</b></td></tr>
+<tr class="separator:afd7f147ad3a557c4fd28228129a05963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a9bb161cf86dd6b0025dc3edff8de26b2"><td class="memItemLeft" align="right" valign="top"><a id="a9bb161cf86dd6b0025dc3edff8de26b2"></a>
+<a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>creer_modele</b> (char p_niveau, char *p_filename)</td></tr>
+<tr class="separator:a9bb161cf86dd6b0025dc3edff8de26b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43b81bfdc904dfb871fae3bbf79a0be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#aa43b81bfdc904dfb871fae3bbf79a0be">detruire_modele</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:aa43b81bfdc904dfb871fae3bbf79a0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">destruction du modèle  <a href="modele_8h.html#aa43b81bfdc904dfb871fae3bbf79a0be">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa43b81bfdc904dfb871fae3bbf79a0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac535e15081a1004f76944ee2614ef498"><td class="memItemLeft" align="right" valign="top"><a id="ac535e15081a1004f76944ee2614ef498"></a>
+GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>lire_score</b> (char *p_filename)</td></tr>
+<tr class="separator:ac535e15081a1004f76944ee2614ef498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759ac65ac3eca423365adfc9495d6ef8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a759ac65ac3eca423365adfc9495d6ef8">ecrire_fichier</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:a759ac65ac3eca423365adfc9495d6ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet d"écrire dans le fichier de score.  <a href="modele_8h.html#a759ac65ac3eca423365adfc9495d6ef8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a759ac65ac3eca423365adfc9495d6ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c55bd1231315231e729b25826855bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a1c55bd1231315231e729b25826855bc9">generer_boutons_suivants</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:a1c55bd1231315231e729b25826855bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère le prochain bouton à apparaitre dans les cases de jeux.  <a href="modele_8h.html#a1c55bd1231315231e729b25826855bc9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1c55bd1231315231e729b25826855bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2306f51550df1cb5aff4b2880691c2b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a2306f51550df1cb5aff4b2880691c2b8">remove_case_libre</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, unsigned int p_num)</td></tr>
+<tr class="memdesc:a2306f51550df1cb5aff4b2880691c2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualise la taille du tableau s_tailleTabLibre si la taille diminue.  <a href="modele_8h.html#a2306f51550df1cb5aff4b2880691c2b8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2306f51550df1cb5aff4b2880691c2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4304c0ce57537b260ade77f8abd7e865"><td class="memItemLeft" align="right" valign="top"><a id="a4304c0ce57537b260ade77f8abd7e865"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_case_libre</b> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, unsigned int p_num)</td></tr>
+<tr class="separator:a4304c0ce57537b260ade77f8abd7e865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691bb2bb7d6ce5e512d1f4e89c722c01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a691bb2bb7d6ce5e512d1f4e89c722c01">fin_de_partie</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:a691bb2bb7d6ce5e512d1f4e89c722c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empêche de modifier le tableau une fois que la partie est terminée.  <a href="modele_8h.html#a691bb2bb7d6ce5e512d1f4e89c722c01">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a691bb2bb7d6ce5e512d1f4e89c722c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae512f1bd1d2fee0d37d034444dc0a4c9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#ae512f1bd1d2fee0d37d034444dc0a4c9">select_case_libre</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, unsigned int p_num)</td></tr>
+<tr class="memdesc:ae512f1bd1d2fee0d37d034444dc0a4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">retourne la case libre selectionnée  <a href="modele_8h.html#ae512f1bd1d2fee0d37d034444dc0a4c9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae512f1bd1d2fee0d37d034444dc0a4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765e6d793bd64553173cd54e6dd41b40"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a765e6d793bd64553173cd54e6dd41b40">deplacement_etat</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, unsigned int p_ligne, unsigned int p_colonne)</td></tr>
+<tr class="memdesc:a765e6d793bd64553173cd54e6dd41b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne l'état du bouton si il est déplacer ou non et actualise les case libre.  <a href="modele_8h.html#a765e6d793bd64553173cd54e6dd41b40">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a765e6d793bd64553173cd54e6dd41b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16b731ab92160366818be08f3dd6616"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#aa16b731ab92160366818be08f3dd6616">victoire_detect</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:aa16b731ab92160366818be08f3dd6616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detecte si l'alignement des couleurs est favorable à une victoire.  <a href="modele_8h.html#aa16b731ab92160366818be08f3dd6616">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa16b731ab92160366818be08f3dd6616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4462733e1fc4f6e2cc49c207e9245cf"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#ad4462733e1fc4f6e2cc49c207e9245cf">get_etat_bouton_suivant</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, unsigned int p_count)</td></tr>
+<tr class="memdesc:ad4462733e1fc4f6e2cc49c207e9245cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour le pointeur s_etatBoutonSuivant  <a href="modele_8h.html#ad4462733e1fc4f6e2cc49c207e9245cf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad4462733e1fc4f6e2cc49c207e9245cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b509c41f7888875ed53bf7c1e111a1d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a1b509c41f7888875ed53bf7c1e111a1d">get_etat_bouton</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, unsigned int p_ligne, unsigned int p_colonne)</td></tr>
+<tr class="memdesc:a1b509c41f7888875ed53bf7c1e111a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour la matrice s_etatBouton  <a href="modele_8h.html#a1b509c41f7888875ed53bf7c1e111a1d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1b509c41f7888875ed53bf7c1e111a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e29c9e58462a2cb8c05a71c077fcc12"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a7e29c9e58462a2cb8c05a71c077fcc12">get_etat_bouton_temp</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:a7e29c9e58462a2cb8c05a71c077fcc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour s_etatBouton  <a href="modele_8h.html#a7e29c9e58462a2cb8c05a71c077fcc12">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7e29c9e58462a2cb8c05a71c077fcc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e60428901c4e7cbb1b54a4c2cda0ab"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#aa2e60428901c4e7cbb1b54a4c2cda0ab">get_filename</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:aa2e60428901c4e7cbb1b54a4c2cda0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour s_filename  <a href="modele_8h.html#aa2e60428901c4e7cbb1b54a4c2cda0ab">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa2e60428901c4e7cbb1b54a4c2cda0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24a09de63d27dfbdea73946bc68cd13"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#ac24a09de63d27dfbdea73946bc68cd13">get_nom</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:ac24a09de63d27dfbdea73946bc68cd13"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour s_nom  <a href="modele_8h.html#ac24a09de63d27dfbdea73946bc68cd13">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac24a09de63d27dfbdea73946bc68cd13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a529c757e767b4e02d7d6eab465db5af8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a529c757e767b4e02d7d6eab465db5af8">set_nom</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, const char *p_nom)</td></tr>
+<tr class="memdesc:a529c757e767b4e02d7d6eab465db5af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter pour s_nom  <a href="modele_8h.html#a529c757e767b4e02d7d6eab465db5af8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a529c757e767b4e02d7d6eab465db5af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca18ee2292f17f1952a0c094d9e5e7a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a2ca18ee2292f17f1952a0c094d9e5e7a">get_nb_boutons_suivants</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:a2ca18ee2292f17f1952a0c094d9e5e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour s_nbBoutonsSuivants  <a href="modele_8h.html#a2ca18ee2292f17f1952a0c094d9e5e7a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2ca18ee2292f17f1952a0c094d9e5e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d58f8906b72ce23cfc0cdfacb41b97"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a90d58f8906b72ce23cfc0cdfacb41b97">get_score</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:a90d58f8906b72ce23cfc0cdfacb41b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour s_score  <a href="modele_8h.html#a90d58f8906b72ce23cfc0cdfacb41b97">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a90d58f8906b72ce23cfc0cdfacb41b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca97907f15c41046e3c7c7351aad1368"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#aca97907f15c41046e3c7c7351aad1368">get_modele_lignes</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:aca97907f15c41046e3c7c7351aad1368"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour s_lignes  <a href="modele_8h.html#aca97907f15c41046e3c7c7351aad1368">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aca97907f15c41046e3c7c7351aad1368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238a5b12817bae5de14fe381c0d68f2d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a238a5b12817bae5de14fe381c0d68f2d">get_modele_colonnes</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:a238a5b12817bae5de14fe381c0d68f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour s_colonnes  <a href="modele_8h.html#a238a5b12817bae5de14fe381c0d68f2d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a238a5b12817bae5de14fe381c0d68f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831349f152165c70fdaa22e49dafa2fc"><td class="memItemLeft" align="right" valign="top"><a id="a831349f152165c70fdaa22e49dafa2fc"></a>
+unsigned int *&#160;</td><td class="memItemRight" valign="bottom"><b>get_position_bouton_temp</b> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="separator:a831349f152165c70fdaa22e49dafa2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af604f1481eee01949f9606401a1892c5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#af604f1481eee01949f9606401a1892c5">get_taille_tab_libre</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele)</td></tr>
+<tr class="memdesc:af604f1481eee01949f9606401a1892c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter pour s_tailleTabLibre  <a href="modele_8h.html#af604f1481eee01949f9606401a1892c5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af604f1481eee01949f9606401a1892c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d596d08d79791af49e7612620e60add"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#a7d596d08d79791af49e7612620e60add">set_taille_tab_libre</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, unsigned int p_taille)</td></tr>
+<tr class="memdesc:a7d596d08d79791af49e7612620e60add"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter pour s_tailleTabLibre  <a href="modele_8h.html#a7d596d08d79791af49e7612620e60add">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7d596d08d79791af49e7612620e60add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74d682409d8fe34f7dee55ba32bdc6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele_8h.html#ac74d682409d8fe34f7dee55ba32bdc6f">set_etat_bouton</a> (<a class="el" href="struct_modele__t.html">Modele</a> *p_modele, char p_etat, unsigned int p_ligne, unsigned int p_colonne)</td></tr>
+<tr class="memdesc:ac74d682409d8fe34f7dee55ba32bdc6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter pour **s_etatBouton  <a href="modele_8h.html#ac74d682409d8fe34f7dee55ba32bdc6f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac74d682409d8fe34f7dee55ba32bdc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation du modèle(boutons) du jeu Five or More. </p>
+<p>Ce fichier contient les déclarations de types et les prototypes des fonctions pour la manipulation de la vue du jeu Five or More.</p>
+<dl class="section author"><dt>Auteurs</dt><dd>Noirfalise Martin S200912, Smeers Timothy S200930 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>05/04/2021</dd></dl>
+<p>Manipule les modele en tant que structure opaque.</p>
+<p>Critère de style : s_ Les variable globale à plusieurs fichiers p_ Les paramètre de fonctions l_ Les variables globale à une seule fonction</p>
+<dl class="section author"><dt>Auteurs</dt><dd>Noirfalise Martin S200912, Smeers Timothy S200930 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>05/04/2021</dd></dl>
+<p>Manipule la vue en tant que structure opaque.</p>
+<p>Critère de style : s_ Les variable globale à plusieurs fichiers p_ Les paramètre de fonctions l_ Les variables globale à une seule fonction </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a765e6d793bd64553173cd54e6dd41b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765e6d793bd64553173cd54e6dd41b40">&#9670;&nbsp;</a></span>deplacement_etat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int deplacement_etat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Donne l'état du bouton si il est déplacer ou non et actualise les case libre. </p>
+<dl class="section warning"><dt>Avertissement</dt><dd>control reaches end of non-void function</dd></dl>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL &amp;&amp; p_ligne &gt;= 0 &amp;&amp; p_colonne &gt;= 0 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+    <tr><td class="paramname">p_ligne</td><td>la ligne selectionnée </td></tr>
+    <tr><td class="paramname">p_colonne</td><td>la colonne selectionnée </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si le bouton est déja mémorisé 1 si le bouton n'est pas encore mémorisé </dd></dl>
+
+</div>
+</div>
+<a id="aa43b81bfdc904dfb871fae3bbf79a0be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43b81bfdc904dfb871fae3bbf79a0be">&#9670;&nbsp;</a></span>detruire_modele()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void detruire_modele </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>destruction du modèle </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>le modèle est détruit </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Le modèle à détruire </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>/ </dd></dl>
+
+</div>
+</div>
+<a id="a759ac65ac3eca423365adfc9495d6ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a759ac65ac3eca423365adfc9495d6ef8">&#9670;&nbsp;</a></span>ecrire_fichier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ecrire_fichier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet d"écrire dans le fichier de score. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a691bb2bb7d6ce5e512d1f4e89c722c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691bb2bb7d6ce5e512d1f4e89c722c01">&#9670;&nbsp;</a></span>fin_de_partie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fin_de_partie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Empêche de modifier le tableau une fois que la partie est terminée. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>s_etatBouton = 'z' </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c55bd1231315231e729b25826855bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c55bd1231315231e729b25826855bc9">&#9670;&nbsp;</a></span>generer_boutons_suivants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generer_boutons_suivants </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génère le prochain bouton à apparaitre dans les cases de jeux. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b509c41f7888875ed53bf7c1e111a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b509c41f7888875ed53bf7c1e111a1d">&#9670;&nbsp;</a></span>get_etat_bouton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char get_etat_bouton </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour la matrice s_etatBouton </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+    <tr><td class="paramname">p_ligne</td><td>la ligne selectionnée </td></tr>
+    <tr><td class="paramname">p_colonne</td><td>la colonne selectionnée </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char s_etatBouton[p_ligne][p_colonne] </dd></dl>
+
+</div>
+</div>
+<a id="ad4462733e1fc4f6e2cc49c207e9245cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4462733e1fc4f6e2cc49c207e9245cf">&#9670;&nbsp;</a></span>get_etat_bouton_suivant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char get_etat_bouton_suivant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour le pointeur s_etatBoutonSuivant </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+    <tr><td class="paramname">p_count</td><td>le compteur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char s_etatBoutonSuivant[p_count] </dd></dl>
+
+</div>
+</div>
+<a id="a7e29c9e58462a2cb8c05a71c077fcc12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e29c9e58462a2cb8c05a71c077fcc12">&#9670;&nbsp;</a></span>get_etat_bouton_temp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char get_etat_bouton_temp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour s_etatBouton </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char s_etatBoutonTemp </dd></dl>
+
+</div>
+</div>
+<a id="aa2e60428901c4e7cbb1b54a4c2cda0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e60428901c4e7cbb1b54a4c2cda0ab">&#9670;&nbsp;</a></span>get_filename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* get_filename </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour s_filename </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char *s_filename </dd></dl>
+
+</div>
+</div>
+<a id="a238a5b12817bae5de14fe381c0d68f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238a5b12817bae5de14fe381c0d68f2d">&#9670;&nbsp;</a></span>get_modele_colonnes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int get_modele_colonnes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour s_colonnes </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>s_colonnes </dd></dl>
+
+</div>
+</div>
+<a id="aca97907f15c41046e3c7c7351aad1368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca97907f15c41046e3c7c7351aad1368">&#9670;&nbsp;</a></span>get_modele_lignes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int get_modele_lignes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour s_lignes </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>s_lignes </dd></dl>
+
+</div>
+</div>
+<a id="a2ca18ee2292f17f1952a0c094d9e5e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca18ee2292f17f1952a0c094d9e5e7a">&#9670;&nbsp;</a></span>get_nb_boutons_suivants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int get_nb_boutons_suivants </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour s_nbBoutonsSuivants </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>s_nbBoutonsSuivants </dd></dl>
+
+</div>
+</div>
+<a id="ac24a09de63d27dfbdea73946bc68cd13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24a09de63d27dfbdea73946bc68cd13">&#9670;&nbsp;</a></span>get_nom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* get_nom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour s_nom </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>char *s_nom </dd></dl>
+
+</div>
+</div>
+<a id="a90d58f8906b72ce23cfc0cdfacb41b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d58f8906b72ce23cfc0cdfacb41b97">&#9670;&nbsp;</a></span>get_score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int get_score </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour s_score </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>s_score </dd></dl>
+
+</div>
+</div>
+<a id="af604f1481eee01949f9606401a1892c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af604f1481eee01949f9606401a1892c5">&#9670;&nbsp;</a></span>get_taille_tab_libre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int get_taille_tab_libre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getter pour s_tailleTabLibre </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>s_tailleTabLibre </dd></dl>
+
+</div>
+</div>
+<a id="a2306f51550df1cb5aff4b2880691c2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2306f51550df1cb5aff4b2880691c2b8">&#9670;&nbsp;</a></span>remove_case_libre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remove_case_libre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actualise la taille du tableau s_tailleTabLibre si la taille diminue. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL &amp;&amp; p_num &gt;= 0 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>s_tailleTabLibre_0 &gt; s_tailleTabLibre </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+    <tr><td class="paramname">p_num</td><td>Le nombre à décrémenter du tableau </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae512f1bd1d2fee0d37d034444dc0a4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae512f1bd1d2fee0d37d034444dc0a4c9">&#9670;&nbsp;</a></span>select_case_libre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int select_case_libre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retourne la case libre selectionnée </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL &amp;&amp; p_num &gt;= 0 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+    <tr><td class="paramname">p_num</td><td>le numéro de la case libre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>unsigned int l_caseLibre la case libre selectionnée </dd></dl>
+
+</div>
+</div>
+<a id="ac74d682409d8fe34f7dee55ba32bdc6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74d682409d8fe34f7dee55ba32bdc6f">&#9670;&nbsp;</a></span>set_etat_bouton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_etat_bouton </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_etat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_colonne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter pour **s_etatBouton </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL &amp;&amp; p_ligne &gt;= 0 &amp;&amp; p_colonne &gt;= 0 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>s_etatBouton0 != s_etatBouton </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+    <tr><td class="paramname">p_etat</td><td>l'état du bouton </td></tr>
+    <tr><td class="paramname">p_ligne</td><td>la ligne selectionnée </td></tr>
+    <tr><td class="paramname">p_colonne</td><td>la colonne selectionnée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a529c757e767b4e02d7d6eab465db5af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a529c757e767b4e02d7d6eab465db5af8">&#9670;&nbsp;</a></span>set_nom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_nom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>p_nom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter pour s_nom </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+    <tr><td class="paramname">p_nom</td><td>Le nouveaux nom </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d596d08d79791af49e7612620e60add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d596d08d79791af49e7612620e60add">&#9670;&nbsp;</a></span>set_taille_tab_libre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_taille_tab_libre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>p_taille</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setter pour s_tailleTabLibre </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL &amp;&amp; p_taille &gt;= 0 </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>s_tailleTabLibre0 != s_tailleTabLibre </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+    <tr><td class="paramname">p_taille</td><td>la nouvelle valeur de s_tailleTabLibre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa16b731ab92160366818be08f3dd6616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa16b731ab92160366818be08f3dd6616">&#9670;&nbsp;</a></span>victoire_detect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int victoire_detect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_modele__t.html">Modele</a> *&#160;</td>
+          <td class="paramname"><em>p_modele</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Detecte si l'alignement des couleurs est favorable à une victoire. </p>
+<dl class="section pre"><dt>Précondition</dt><dd>p_modele != NULL </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>/ </dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_modele</td><td>Un pointeur sur la structure de modele </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si une victoire à été détectée 0 sinon </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
